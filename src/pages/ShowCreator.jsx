@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../client.js'
-import CreatorCard from '../components/creatorCard.jsx'
+import CreatorCard from '../components/CreatorCard.jsx'
 import { Link } from 'react-router-dom'
 
 export default function ShowCreator() {
