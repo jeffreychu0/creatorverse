@@ -1,0 +1,275 @@
+.app-container {
+    padding: 12px;
+}
+
+.app-header {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.header-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px 32px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    font-size: 26px;
+    color: white;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-success:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-danger {
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+    cursor: pointer;
+}
+
+.btn-danger:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.creator-card {
+    background-color: #1a1a1a;
+    display: flex;
+    gap: 10px;
+    width: 60vw;
+    position: relative;
+}
+
+.creator-card-image {
+    position: relative;
+}
+
+.creator-card-image img {
+    padding: 15px;
+    max-width: 150px;
+}
+
+.creator-card-edit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.creator-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.creator-card-content h2 {
+    text-align: left;
+}
+
+.show-creator-title {
+    text-align: center;
+}
+
+.show-creator-error {
+    color: red;
+    text-align: center;
+}
+
+.creator-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    justify-content: center;
+}
+
+.creator-list-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.highlight-creator-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+}
+
+.highlight-creator-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: white;
+    align-items: center;
+}
+
+.highlight-creator-content h1 {
+    margin: 0 0 16px 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.highlight-creator-content p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.highlight-creator-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.highlight-creator-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.highlight-creator-image {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.form-message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-error {
+    color: red;
+    background-color: #ffe6e6;
+}
+
+.form-success {
+    color: green;
+    background-color: #e6ffe6;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-input {
+    font-family: inherit;
+}
+
+.form-textarea {
+    font-family: inherit;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

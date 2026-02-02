@@ -1,16 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function CreatorCard({ name, url, description, imageUrl}) {
-  return (
-    <>
-    <div style={{backgroundColor: "#000000", display: "flex", gap: '10px', width: '60vw'}} >
-        <img src={imageUrl} style={{padding: '15px', maxWidth: "150px"}}></img>
-        
-        <div>
-            <h2 style={{textAlign: 'left'}}>{name}</h2>
-            <text>{description}</text>
+export default function CreatorCard({ name, url, description, imageUrl }) {
+    return (
+        <div className="creator-card">
+            <div className="creator-card-image">
+                <img src={imageUrl}></img>
+                <Link
+                    to={`/edit-creator/${encodeURIComponent(url)}`}
+                    className="creator-card-edit-btn"
+                    title="Edit creator"
+                >
+                    ✎
+                </Link>
+            </div>
+
+            <div className="creator-card-content">
+                <h2>{name}</h2>
+                <text>{description}</text>
+            </div>
         </div>
-    </div>
-    </>
-  )
+    )
 }
