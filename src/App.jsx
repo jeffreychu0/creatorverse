@@ -7,21 +7,21 @@ import EditCreator from './pages/EditCreator'
 import NavBar from './components/NavBar'
 
 function App() {
-  const routes = useRoutes([
-    { path: '/', element: <ShowCreator /> },
-    { path: '/creator/:id', element: <HighlightCreator /> },
-    { path: '/add', element: <AddCreator />},
-    { path: '/edit', element: <EditCreator />}
-  ])
+    const routes = useRoutes([
+        { path: '/', element: <ShowCreator /> },
+        { path: '/creator/:id', element: <HighlightCreator /> },
+        { path: '/add', element: <AddCreator /> },
+        { path: '/edit-creator/:id', element: <EditCreator /> }
+    ])
 
-  return (
-    <div>
-      <NavBar/>
-      <div style={{padding: 12}}>
-        {routes}
-      </div>
-    </div>
-  )
+    return (
+        <div>
+            <NavBar />
+            <div className="app-container">
+                {routes}
+            </div>
+        </div>
+    )
 }
 
 export default App
